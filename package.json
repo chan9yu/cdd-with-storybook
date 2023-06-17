@@ -1,8 +1,17 @@
 {
   "name": "cdd-with-storybook",
-  "version": "0.0.0",
-  "keywords": [],
-  "type": "module",
+  "version": "0.0.1",
+  "description": "스토리북과 함께하는 컴포넌트 주도 개발",
+  "keywords": [
+    "design system",
+    "ui components",
+    "react"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chan9yu/cdd-with-storybook"
+  },
   "main": "dist/esm/index.js",
   "exports": {
     ".": {
@@ -10,17 +19,15 @@
       "require": "./dist/cjs/index.js"
     }
   },
-  "author": {
-    "name": "chan9yu"
-  },
-  "engines": {
-    "node": ">=18"
-  },
   "files": [
     "dist",
     "dist/esm"
   ],
-  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/chan9yu/cdd-with-storybook",
   "lint-staged": {
     "**/*.{ts,tsx}": [
       "eslint --fix",
@@ -41,6 +48,10 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -54,6 +65,9 @@
     "@babel/preset-typescript": "^7.22.5",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.1",
     "@storybook/addon-essentials": "^7.0.20",
     "@storybook/addon-interactions": "^7.0.20",
@@ -84,9 +98,5 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "storybook": "^7.0.20",
     "typescript": "^5.0.2"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
