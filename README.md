@@ -2,16 +2,12 @@
 
 > 스토리북과 함께하는 컴포넌트 주도 개발
 
-<br />
-
 ## 개발 환경
 
 - react
 - typescript
 - emotion
 - storybook
-
-<br />
 
 ## Installation
 
