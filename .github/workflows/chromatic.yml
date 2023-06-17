@@ -26,3 +26,9 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Record Deployment History
+        run: |
+          # Add your script here to record the deployment history in a database
+          # For example, you can use cURL or an SDK for your chosen database
+          # Remember to include information like deployment version, timestamp, and changes
+          echo "Recording deployment history..."
