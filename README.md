@@ -47,7 +47,7 @@ const App = () => {
 ## Docs
 
 - Storybook Link
-  - https://chan9yu.github.io/cdd-storybook-wanted
+  - https://648d32eba6effc8faaa45e14-dyjfmzvpuh.chromatic.com/
 
 ## License
 
