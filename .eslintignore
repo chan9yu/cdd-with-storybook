@@ -44,3 +44,4 @@
 **/cache/
 **/*.config.ts
 **/*.config.js
+**/*.config.cjs
