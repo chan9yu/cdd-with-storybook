@@ -1,7 +1,6 @@
 {
-  "name": "storybook-practice",
-  "private": true,
-  "version": "0.0.1",
+  "name": "cdd-with-storybook",
+  "version": "0.0.0",
   "lint-staged": {
     "**/*.{ts,tsx}": [
       "eslint --fix",
@@ -64,10 +63,5 @@
     "storybook": "^7.0.20",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   }
 }
